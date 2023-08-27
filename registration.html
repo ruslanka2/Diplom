@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&family=Lumanosimo&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <top>
+        <header class="header  ">
+            <!-- <img src="img/unt3itled 2.svg" alt="background" class="header__background"> -->
+            <div class="nav ">
+                <div class="nav__logo">
+                    <a href="index.html"><h2 class="logo__title">DROP HUNTER</h2></a>
+                </div>
+                <nav class="nav__link">
+                    <div class="menu__box">
+                        <details class="menu__filter" > <summary class="menu__summary">Menu</summary><div class="menu__content">
+                            <details class="menu__item" open>
+                                <summary class="menu__heading">Mainet</summary>
+                                <a href="#" class="menu__link">Layerzero</a>
+                                <a href="#" class="menu__link">ZkSync</a>
+                                <a href="#" class="menu__link">Polyhedra Network</a>
+                                <a href="#" class="menu__link">Holograph</a>
+                                <a href="#" class="menu__link">SyncSwap</a>
+                            </details>
+                            
+                            <details class="menu__item" >
+                                <summary class="menu__heading"> Testnet</summary>
+                                <a href="#" class="menu__link">Zetachain</a><br>
+                                <a href="#" class="menu__link">Taiko</a><br>
+                                <a href="#" class="menu__link">Tabi    </a>
+                        </details>
+                        </div></details>
+                    
+                    </div>
+                    <a href="#" class="nav__link_name">Partners</a>
+                    <a href="#" class="nav__link_name">Academy</a>
+                    
+                </nav>
+                <div class="nav__button">
+                    <a href="registration.html" class="nav__button_links">
+                        regestration
+                    </a>
+                    <a href="join.html" class="nav__button_link"><button class="nav__button_sign"><p class="nav__bitton_text">sign in</p></button></a>
+                </div>
+
+            </div>
+<section class="form"><div class="form__box">
+
+    <form id="registrationForm" class="form-box">
+         
+        <div class="form-box__name">
+            <label for="email" class="form-box__name_text">Email :</label>
+            <label for="email"firstName class="form-box__name_text">First Name :</label>
+            <label for="lastName" class="form-box__name_text">Last Name :</label>
+            <label for="password" class="form-box__name_text">Password :</label>
+            <label for="repeatPassword" class="form-box__name_text">Repeat Password :</label></div>
+        <div class="form-box__input">
+            <input id="email" class="form-box__input_size" type="email" required  placeholder="info@drop-hunter.app" autofocus id="email">
+            <input class="form-box__input_size" type="text" required placeholder="Ruslan" id="firstName">
+            <input class="form-box__input_size" type="text" placeholder="Feoktistov" id="lastName">
+            <input class="form-box__input_size" type="password" required id="password">
+            <input class="form-box__input_size" type="password" required id="repeatPassword">
+            <div id="error" class="error"></div>
+        </div>
+        <footer class="form-box__button">
+            <button class="form-box__button_style" type="submit">
+                register
+            </button>
+        </footer>
+    </form>
+</div>
+</section>
+<script src="scriptregistr/passwordRepeat.js" >
+
+
+</script>
+</body>
+</html>
