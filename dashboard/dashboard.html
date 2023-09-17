@@ -1,139 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-            rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&family=Lumanosimo&family=Oswald:wght@200;300;400;500;600;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="header  ">
-            <!-- <img src="img/unt3itled 2.svg" alt="background" class="header__background"> -->
-            <div class="nav ">
-                <div class="nav__logo">
-                    <a href="../index.html"><h2 class="logo__title">DROP HUNTER</h2></a>
-                </div>
-                <nav class="nav__link">
-                    <div class="menu__box">
-                        <details class="menu__filter"> <summary
-                                class="menu__summary">Menu</summary><div
-                                class="menu__content">
-                                <details class="menu__item" open>
-                                    <summary class="menu__heading">Mainet</summary>
-                                    <a href="#" class="menu__link">Layerzero</a>
-                                    <a href="#" class="menu__link">ZkSync</a>
-                                    <a href="#" class="menu__link">Polyhedra
-                                        Network</a>
-                                    <a href="#" class="menu__link">Holograph</a>
-                                    <a href="#" class="menu__link">SyncSwap</a>
-                                </details>
 
-                                <details class="menu__item">
-                                    <summary class="menu__heading"> Testnet</summary>
-                                    <a href="#" class="menu__link">Zetachain</a><br>
-                                    <a href="#" class="menu__link">Taiko</a><br>
-                                    <a href="#" class="menu__link">Tabi </a>
-                                </details>
-                            </div></details>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600&family=Lumanosimo&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-                    </div>
-                    <a href="#" class="nav__link_name">Partners</a>
-                    <a href="#" class="nav__link_name">Academy</a>
-
-                </nav>
-                <div class="nav__button">
-                   
-                    <a href="../index.html" class="nav__button_link"><button
-                            class="nav__button_sign"><p class="nav__bitton_text">go out</p></button></a>
-                </div>
-
+<body>
+    <header class="header  ">
+        <!-- <img src="img/unt3itled 2.svg" alt="background" class="header__background"> -->
+        <div class="nav ">
+            <div class="nav__logo">
+                <a href="../index.html">
+                    <h2 class="logo__title">DROP HUNTER</h2>
+                </a>
             </div>
-            <div class="form">
-                <div class="form-box" id="app">
-                    <div class="links">
-                        <div class="link" @click="selectProject='Layerzero'"><p class="link__text">Layer zero</p> </div>
-                       <div class="link" @click="selectProject='Zetachain'"><p class="link__text">Zetachain</p> </div>
-                        <div class="link" @click="selectProject='ZkSync'"><p class="link__text">ZkSync</p> </div>
+            <nav class="nav__link">
+                <div class="menu__box">
+                    <details class="menu__filter">
+                        <summary class="menu__summary">Menu</summary>
+                        <div class="menu__content">
+                            <details class="menu__item" open>
+                                <summary class="menu__heading">Mainet</summary>
+                                <a href="#" class="menu__link">Layerzero</a>
+                                <a href="#" class="menu__link">ZkSync</a>
+                                <a href="#" class="menu__link">Polyhedra
+                                    Network</a>
+                                <a href="#" class="menu__link">Holograph</a>
+                                <a href="#" class="menu__link">SyncSwap</a>
+                            </details>
+
+                            <details class="menu__item">
+                                <summary class="menu__heading"> Testnet</summary>
+                                <a href="#" class="menu__link">Zetachain</a><br>
+                                <a href="#" class="menu__link">Taiko</a><br>
+                                <a href="#" class="menu__link">Tabi </a>
+                            </details>
+                        </div>
+                    </details>
+
+                </div>
+                <a href="#" class="nav__link_name">Partners</a>
+                <a href="#" class="nav__link_name">Academy</a>
+
+            </nav>
+            <div class="nav__button">
+
+                <a href="../index.html" class="nav__button_link"><button class="nav__button_sign">
+                        <p class="nav__bitton_text">go out</p>
+                    </button></a>
+            </div>
+
+        </div>
+        <div class="form">
+            <div class="form-box" id="app">
+                <div class="links">
+                    <div class="link" @click="selectProject='Layerzero'">
+                        <p class="link__text">Layer zero</p>
                     </div>
-                    <div class="activities-box">
+                    <div class="link" @click="selectProject='Zetachain'">
+                        <p class="link__text">Zetachain</p>
+                    </div>
+                    <div class="link" @click="selectProject='ZkSync'">
+                        <p class="link__text">ZkSync</p>
+                    </div>
+                </div>
+                <div class="activities-box">
                     <div class="activities">
                         <div class="back" v-if="selectProject === 'Layerzero'">
                             <div class="activity" v-for="activity in layerzeroActivity" :key="activity.id">
                                 {{activity.name}}
                                 <input class="input" type="checkbox" v-model="activity.checked">
-                               
+        
                             </div>
                         </div>
                         <div class="back" v-if="selectProject === 'Zetachain'">
                             <div class="activity" v-for="activity in ZetachainActivity" :key="activity.id">
                                 {{activity.name}}
                                 <input class="input" type="checkbox" v-model="activity.checked">
-                                
+        
                             </div>
                         </div>
                         <div class="back" v-if="selectProject === 'ZkSync'">
                             <div class="activity" v-for="activity in ZksyncActivity" :key="activity.id">
                                 {{activity.name}}
                                 <input class="input" type="checkbox" v-model="activity.checked">
-                                
+        
                             </div>
                         </div>
-                        <div ></div>
-                    </div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
-            <script src="https://unpkg.com/vue@next">
-            
+        </div>
+        <script src="https://unpkg.com/vue@next">
+
         </script>
-            <script>
+        <script>
             Vue.createApp({
-            data (){
-                return{
-                    selectProject:'Layerzero',
-                    layerzeroActivity:[
-                        {id:1, name:"Bay Nft",checked:false},
-                        {id:2, name:"Bridge usdt on the stargate website", checked:false},
-                        {id:3, name:"10 transaction", checked:false},
-                        {id:4, name:"Bay domen", checked:false},
-                        { id: 5, name: 'Make a bridge', checked: false },
-          { id: 6, name: 'Complete a task', checked: false },
-          { id: 7, name: 'Participate in a competition', checked: false }
-                    ],
-                    ZetachainActivity:[
-                        {id:1, name:"Complete a task",checked:false},
-                        {id:2, name:"Bridge usdton the syncswap website", checked:false},
-                        {id:3, name:"10 transaction", checked:false},
-                        {id:4, name:"Bay domen", checked:false},
-                        { id: 5, name: 'Complete a task', checked: false },
-          { id: 6, name: 'Participate in a competition', checked: false }
-                    ],
-                    ZksyncActivity:[
-                        {id:1, name:"Bridge Nft",checked:false},
-                        {id:2, name:"Bridge usdt", checked:false},
-                        {id:3, name:"10 transaction on the syncswap website", checked:false},
-                        {id:4, name:"Bay domen", checked:false},
-                        { id: 5, name: 'Buy NFT', checked: false },
-          { id: 6, name: 'Make a bridge', checked: false },
-          { id: 7, name: 'Buy NFT', checked: false },
-          { id: 8, name: 'Make a bridge', checked: false },
-                    ],
-                }
-            },
-            methods: {
-                
-            },
-        }).mount('#app')
+                data() {
+                    return {
+                        selectProject: 'Layerzero',
+                        layerzeroActivity: [
+                            { id: 1, name: "Bay Nft", checked: false },
+                            { id: 2, name: "Bridge usdt on the stargate website", checked: false },
+                            { id: 3, name: "10 transaction", checked: false },
+                            { id: 4, name: "Bay domen", checked: false },
+                            { id: 5, name: 'Make a bridge', checked: false },
+                            { id: 6, name: 'Complete a task', checked: false },
+                            { id: 7, name: 'Participate in a competition', checked: false }
+                        ],
+                        ZetachainActivity: [
+                            { id: 1, name: "Complete a task", checked: false },
+                            { id: 2, name: "Bridge usdton the syncswap website", checked: false },
+                            { id: 3, name: "10 transaction", checked: false },
+                            { id: 4, name: "Bay domen", checked: false },
+                            { id: 5, name: 'Complete a task', checked: false },
+                            { id: 6, name: 'Participate in a competition', checked: false }
+                        ],
+                        ZksyncActivity: [
+                            { id: 1, name: "Bridge Nft", checked: false },
+                            { id: 2, name: "Bridge usdt", checked: false },
+                            { id: 3, name: "10 transaction on the syncswap website", checked: false },
+                            { id: 4, name: "Bay domen", checked: false },
+                            { id: 5, name: 'Buy NFT', checked: false },
+                            { id: 6, name: 'Make a bridge', checked: false },
+                            { id: 7, name: 'Buy NFT', checked: false },
+                            { id: 8, name: 'Make a bridge', checked: false },
+                        ],
+                    }
+                },
+                methods: {
+
+                },
+            }).mount('#app')
         </script>
-        </body>
-    </html>
+</body>
+
+</html>
