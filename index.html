@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drop-hunter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,6 +22,11 @@
                 <div class="nav__logo">
                     <a href="index.html"><h2 class="logo__title">DROP HUNTER</h2></a>
                 </div>
+                <div class="well-box">
+                    <div id="bitcoin-price" class="well-style"></div>
+                    <div id="ethereum-price" class="well-style"></div>
+                </div>
+                
                 <nav class="nav__link">
                     <div class="menu__box">
                         <details class="menu__filter" > <summary class="menu__summary">Menu</summary><div class="menu__content">
@@ -47,11 +52,12 @@
                     <a href="#" class="nav__link_name">Academy</a>
                     
                 </nav>
+                <div id="bitcoin-price"></div>
                 <div class="nav__button">
-                    <a href="#" class="nav__button_links">
+                    <a href="registration.html" class="nav__button_links">
                         regestration
                     </a>
-                    <a href="#" class="nav__button_link"><button class="nav__button_sign"><p class="nav__bitton_text">sign in</p></button></a>
+                    <a href="join.html" class="nav__button_link"><button class="nav__button_sign"><p class="nav__bitton_text">sign in</p></button></a>
                 </div>
 
             </div>
@@ -151,6 +157,12 @@
                 </div>
             </div>box
         </div>
+        <div class="earnings">
+            <div class="scrollable" ref="scrollable" v-scroll="handleScroll" id="app">
+                <h2 class="app-title">В Since the beginning of the year, our clients have already earned <h2 class="app-subtitle">{{counter}} $ </h>
+                </h2>
+              </div>
+        </div>
         <div class="registration"></div>
         <div class="footer">
             <div class="left-half">
@@ -159,17 +171,17 @@
                     <div class="social-network">
                         <p class="social-network__text">We are in social <br>networks</p>
                         <div class="social-network__icons">
-                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="black">
+                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" class="icoo" width="43" height="43" viewBox="0 0 43 43" fill="black">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0098 0.781738C9.40642 0.781738 0 10.1882 0 21.7916C0 33.395 9.40642 42.8014 21.0098 42.8014C32.6132 42.8014 42.0196 33.395 42.0196 21.7916C42.0196 10.1882 32.6132 0.781738 21.0098 0.781738ZM23.4408 23.0928V35.095H18.4749V23.0933H15.9939V18.9573H18.4749V16.474C18.4749 13.0999 19.8758 11.0935 23.8559 11.0935H27.1695V15.2299H25.0983C23.5489 15.2299 23.4464 15.808 23.4464 16.8867L23.4408 18.9568H27.193L26.7539 23.0928H23.4408Z" fill="white"/>
                               </svg></div>
-                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="black">
+                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" class="icoo" width="43" height="43" viewBox="0 0 43 43" fill="black">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7464 0.781738C10.143 0.781738 0.736572 10.1882 0.736572 21.7916C0.736572 33.395 10.143 42.8014 21.7464 42.8014C33.3498 42.8014 42.7562 33.395 42.7562 21.7916C42.7562 10.1882 33.3498 0.781738 21.7464 0.781738ZM30.5019 14.5689C31.4662 14.8335 32.2256 15.6132 32.4833 16.6033C32.9516 18.3977 32.9516 22.1418 32.9516 22.1418C32.9516 22.1418 32.9516 25.8858 32.4833 27.6803C32.2256 28.6704 31.4662 29.4501 30.5019 29.7148C28.7544 30.1956 21.7464 30.1956 21.7464 30.1956C21.7464 30.1956 14.7384 30.1956 12.9908 29.7148C12.0265 29.4501 11.2671 28.6704 11.0093 27.6803C10.5411 25.8858 10.5411 22.1418 10.5411 22.1418C10.5411 22.1418 10.5411 18.3977 11.0093 16.6033C11.2671 15.6132 12.0265 14.8335 12.9908 14.5689C14.7384 14.088 21.7464 14.088 21.7464 14.088C21.7464 14.088 28.7544 14.088 30.5019 14.5689Z" fill="white"/>
                                 <path d="M19.6453 25.9935V18.9902L25.2479 22.492L19.6453 25.9935Z" fill="white"/>
-                              </svg></div>
-                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="black">
+                              </svg></div>A
+                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" class="icoo" width="43" height="43" viewBox="0 0 43 43" fill="black">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.554443 21.7911C0.554443 33.3945 9.96086 42.8009 21.5643 42.8009C33.1677 42.8009 42.5741 33.3945 42.5741 21.7911C42.5741 10.1877 33.1677 0.78125 21.5643 0.78125C9.96086 0.78125 0.554443 10.1877 0.554443 21.7911ZM17.7123 31.4207L18.0698 26.0652L18.0695 26.0649L27.8118 17.2732C28.2394 16.8937 27.7185 16.7087 27.1509 17.0529L15.1275 24.6383L9.93402 23.0173C8.81247 22.6739 8.80441 21.9032 10.1858 21.3492L30.4235 13.5456C31.3478 13.126 32.24 13.7676 31.8871 15.1823L28.4406 31.4234C28.2 32.5775 27.5026 32.8535 26.5364 32.3204L21.2864 28.4416L18.7628 30.8954C18.7548 30.9032 18.7469 30.9109 18.7391 30.9186C18.4568 31.1933 18.2233 31.4207 17.7123 31.4207Z" fill="white"/>
                               </svg></div>
-                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="black">
+                            <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" class="icoo" width="43" height="43" viewBox="0 0 43 43" fill="black">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9903 0.78125C10.3869 0.78125 0.980469 10.1877 0.980469 21.7911C0.980469 33.3945 10.3869 42.8009 21.9903 42.8009C33.5937 42.8009 43.0001 33.3945 43.0001 21.7911C43.0001 10.1877 33.5937 0.78125 21.9903 0.78125ZM23.918 29.0879C23.7005 29.3172 23.2758 29.3635 23.2758 29.3635H21.8694C21.8694 29.3635 18.7665 29.5466 16.0331 26.7538C13.0522 23.7069 10.42 17.6617 10.42 17.6617C10.42 17.6617 10.2681 17.2652 10.4327 17.0742C10.618 16.8584 11.1232 16.8449 11.1232 16.8449L14.4851 16.8234C14.4851 16.8234 14.8016 16.8743 15.0283 17.0381C15.2159 17.1736 15.3207 17.4256 15.3207 17.4256C15.3207 17.4256 15.8639 18.7745 16.5832 19.9946C17.9885 22.3772 18.6422 22.898 19.1187 22.6427C19.8138 22.271 19.6055 19.275 19.6055 19.275C19.6055 19.275 19.6182 18.1882 19.2557 17.7035C18.9748 17.3284 18.4454 17.2188 18.2118 17.1883C18.0219 17.1635 18.3326 16.7319 18.7354 16.5387C19.3408 16.2484 20.4089 16.2314 21.6714 16.2439C22.6555 16.254 22.9386 16.3139 23.323 16.4054C24.2152 16.6167 24.1873 17.294 24.1272 18.7557C24.1092 19.1928 24.0884 19.7001 24.0884 20.2861C24.0884 20.4178 24.0845 20.5581 24.0804 20.7025C24.0596 21.4513 24.0357 22.3089 24.5384 22.628C24.7962 22.7907 25.4257 22.6518 27.0013 20.0262C27.7483 18.7813 28.3076 17.3183 28.3076 17.3183C28.3076 17.3183 28.4308 17.0573 28.6207 16.9454C28.8152 16.8313 29.0776 16.8664 29.0776 16.8664L32.6155 16.8449C32.6155 16.8449 33.679 16.7195 33.8505 17.1917C34.0312 17.6854 33.4534 18.84 32.0079 20.7312C30.6366 22.5256 29.9693 23.1863 30.0306 23.7706C30.0753 24.1976 30.5091 24.5837 31.3415 25.3417C33.0791 26.9253 33.5449 27.7584 33.6568 27.9586C33.6661 27.9752 33.6729 27.9875 33.6778 27.9954C34.457 29.2641 32.8135 29.3635 32.8135 29.3635L29.6703 29.4065C29.6703 29.4065 28.9959 29.5375 28.1074 28.9388C27.6419 28.6254 27.1871 28.1135 26.7539 27.626C26.0924 26.8815 25.4812 26.1937 24.9596 26.3562C24.0838 26.6296 24.1102 28.4812 24.1102 28.4812C24.1102 28.4812 24.1171 28.8777 23.918 29.0879Z" fill="white"/>
                               </svg></div>
                         </div>
@@ -199,11 +211,65 @@
                     <a href="#" class="footer-platform__link">Carier</a>
                 </div>
                 <div class="footer-lk">
-                    <a href="#"><h2 class="footer-lk_link">Sign in</h2></a>
-                    <a href="#"><h2 class="footer-lk_link">Create on account</h2></a>
+                    <a href="join.html"><h2 class="footer-lk_link">Sign in</h2></a>
+                    <a href="registration.html"><h2 class="footer-lk_link">Create on account</h2></a>
                 </div>
             </div>
         </div>
     </top>
+    <script src="scriptregistr/well.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    
+    <script>
+        const { createApp, ref, onMounted } = Vue;
+      
+        createApp({
+          name: 'Counter',
+          setup() {
+            const counter = ref(0);
+            let isCounterStarted = false;
+      
+            const handleScroll = () => {
+              const element = document.getElementById('app');
+              const rect = element.getBoundingClientRect();
+              const windowHeight = window.innerHeight;
+      
+              if (!isCounterStarted && rect.top <= windowHeight && rect.bottom >= 0) {
+                
+                animateCounter();
+                isCounterStarted = true;
+              }
+            };
+      
+            const animateCounter = () => {
+              const duration = 100; // Длительность анимации в миллисекундах
+              const endValue = 4750;
+              const increment = endValue / duration;
+      
+              let currentValue = 0;
+      
+              const updateCounter = () => {
+                if (currentValue < endValue) {
+                  currentValue += increment;
+                  counter.value = Math.round(currentValue);
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.value = endValue;
+                }
+              };
+      
+              updateCounter();
+            };
+      
+            onMounted(() => {
+              window.addEventListener('scroll', handleScroll);
+            });
+      
+            return {
+              counter
+            };
+          }
+        }).mount('#app');
+      </script>
 </body>
 </html>
